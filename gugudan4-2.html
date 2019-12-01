@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <script>
+        let num = Number(prompt("몇 단을 출력할까요"));
+        let title = document.querySelector('#title')
+        let i = 1;
+        title.innerHTML = "구구단 " + num + "단 출력하기";
+        
+        if(!(num >= 2 && num <= 9)) {
+
+            document.write("2단 이상 9단 이하의 단수를 입력해주세요!!!");
+
+        }else {
+
+            for (let i = 1; i <=9; i++) {
+            document.write(num + " * " + i + " = " + num * i + "<br>");
+            
+            }
+    
+        }
+    </script>
+    
+</body>
+</html>
