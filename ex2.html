@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>소수찾기</title>
+</head>
+<body>
+    <h1>소수 판별 프로그램</h1>
+    <script>
+        let num = Number(prompt("숫자를 입력해 주세요"));
+        let cnt = 0;
+
+        for (let index = 2; index <= num; index++) {
+            
+            if(num % index === 0) {
+                console.log(num, index, cnt);
+                cnt ++;
+            }else{
+                console.log(num, index, cnt);
+            }
+
+        }
+
+        if(cnt === 1){
+            document.write(num + "은(는) 소수입니다"); 
+        }else{
+            document.write(num + "은(는) 소수가 아닙니다"); 
+        }
+    </script>
+</body>
+</html>

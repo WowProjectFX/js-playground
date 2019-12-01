@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>test</h2>
+    <script>
+
+        var sum = 0;
+
+        for (let index = 1; index < 100; index++) {
+            if(index % 2 === 0)
+                sum += index;
+        }
         
+        document.write("1부터 100까지 짝수의 합은" + sum );
+    </script>
 </body>
 </html>
